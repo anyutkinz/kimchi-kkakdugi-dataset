@@ -28,42 +28,26 @@ This project demonstrates the creation of a custom image dataset for **kimchi** 
   ```bash
   pip install selenium pillow uuid
 
-## Project Structure:
-```bash
-scripts/                 # Helper scripts
-
-├── scraper.py           # Image scraping from Google
-
-├── augment_images.py    # Image augmentation
-
-├── rename_images.py     # File renaming
-
-└── preprocess_images.py # Image resizing/normalization
-
-data/
-
-├── raw/                 # Raw scraped images
-
-│   ├── kimchi/
-
-│   └── kkakdugi/
-
-├── augmented/           # Augmented images
-
-│   ├── kimchi/
-
-│   └── kkakdugi/
-
-└── splitted/        # Processed images (ready for ML)
-
-    ├── train/
-    
-    ├── val/
-    
-    └── test/
-
 ## Notes:
 
 1) For detaild, refer to scripts - I left detailed comments!
 2) Though I used public domain for scraping, I do not claim that this dataset is MINE. This project is created only for educational purposes. 
 
+## Project Structure:
+```bash
+scripts/                 # Helper scripts
+├── scraper.py           # Image scraping from Google
+├── augment_images.py    # Image augmentation
+├── rename_images.py     # File renaming
+└── preprocess_images.py # Image resizing/normalization
+data/
+├── raw/                 # Raw scraped images
+│   ├── kimchi/
+│   └── kkakdugi/
+├── augmented/           # Augmented images
+│   ├── kimchi/
+│   └── kkakdugi/
+└── splitted/        # Processed images (ready for ML)
+    ├── train/  
+    ├── val/    
+    └── test/
