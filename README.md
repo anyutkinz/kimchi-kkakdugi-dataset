@@ -29,7 +29,7 @@ This project demonstrates the creation of a custom image dataset for **kimchi** 
   pip install selenium pillow uuid
 
 ## Project Structure:
-
+```bash
 scripts/                 # Helper scripts
 
 ├── scraper.py           # Image scraping from Google
