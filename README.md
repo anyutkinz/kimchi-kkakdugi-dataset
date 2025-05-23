@@ -1,6 +1,6 @@
 # Kimchi-Kkakdugi Image Dataset Creation
 
-*Dataset hosted on [Google Drive]()*
+*Dataset hosted on [Google Drive](https://drive.google.com/drive/folders/1iyzJzpOmNW2F2aDdJ-_vWJ4Fd1jpZq6Y?usp=sharing)*
 
 ## Overview:
 This project demonstrates the creation of a custom image dataset for **kimchi** (fermented cabbage) and **kkakdugi** (cubed radish kimchi), two traditional Korean dishes. The dataset is designed for educational or small-scale machine learning projects, particularly for training CNNs. The final dataset contains **1,000 images per class**, generated through web scraping, augmentation, and preprocessing.
@@ -18,7 +18,7 @@ This project demonstrates the creation of a custom image dataset for **kimchi** 
 - **Total Images**: 2,000 (1,000 per class).
 - **Format**: JPEG images, preprocessed and augmented.
 - **License**: Public domain/Creative Commons (respecting original image rights).
-- **Access**: [Download from Google Drive]().
+- **Access**: [Download from Google Drive](https://drive.google.com/drive/folders/1iyzJzpOmNW2F2aDdJ-_vWJ4Fd1jpZq6Y?usp=sharing).
 
 ---
 
@@ -31,21 +31,35 @@ This project demonstrates the creation of a custom image dataset for **kimchi** 
 ## Project Structure:
 
 scripts/                 # Helper scripts
+
 ├── scraper.py           # Image scraping from Google
+
 ├── augment_images.py    # Image augmentation
+
 ├── rename_images.py     # File renaming
+
 └── preprocess_images.py # Image resizing/normalization
 
 data/
+
 ├── raw/                 # Raw scraped images
+
 │   ├── kimchi/
+
 │   └── kkakdugi/
+
 ├── augmented/           # Augmented images
+
 │   ├── kimchi/
+
 │   └── kkakdugi/
+
 └── splitted/        # Processed images (ready for ML)
+
     ├── train/
+    
     ├── val/
+    
     └── test/
 
 ## Notes:
